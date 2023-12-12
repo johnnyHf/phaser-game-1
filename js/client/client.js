@@ -9,7 +9,7 @@ var Client = {
     storageNameKey: 'playerName', // key in localStorage of the player name
     storageIDKey: 'playerID' // key in localStorage of player ID
 };
-Client.socket = io.connect("http://139.186.203.142:8082");
+Client.socket = io.connect("http://rgper-api.hf2007.com");
 
 // The following checks if the game is initialized or not, and based on this either queues the events or process them
 // The original socket.onevent function is copied to onevent. That way, onevent can be used to call the origianl function,
